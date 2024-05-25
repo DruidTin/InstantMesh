@@ -32,10 +32,12 @@ We recommend using `Python>=3.10`, `PyTorch>=2.1.0`, and `CUDA>=12.1`.
 ```bash
 conda create --name instantmesh python=3.10
 conda activate instantmesh
+python -m venv venv
 pip install -U pip
 
 # Ensure Ninja is installed
 conda install Ninja
+python install Ninja
 
 # Install the correct version of CUDA
 conda install cuda -c nvidia/label/cuda-12.1.0
